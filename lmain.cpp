@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
 
-// Первый интерфейс
+
 class IPrinter {
 public:
     virtual void PrintHeader() = 0;
     virtual void PrintContent() = 0;
 };
 
-// Второй интерфейс
+
 class ICalculator {
 public:
     virtual void CalculateSum(double a, double b) = 0;
     virtual void CalculateMult(double a, double b) = 0;
 };
 
-// Класс, реализующий оба интерфейса
+
 class MultiFunctionDevice : public IPrinter,
                            public ICalculator {
 public:
@@ -49,7 +49,7 @@ void demoInterfaces() {
 
 // -----------------------------------------------------------------------------
 
-// Интерфейс для операций с числами
+
 class INumberOperations {
 public:
     double result1;
